@@ -1,0 +1,110 @@
+/*	This contains all the most basic type styling a site will need.
+	
+	font: font-style font-variant font-weight font-size/line-height font-family;
+
+$BASICSTYLE__h1: bold 1.4em $serif;
+$BASICSTYLE__h2: bold 1.2em $serif;
+$BASICSTYLE__h3: bold 1.1em $serif;
+$BASICSTYLE__h4: bold 1em $serif;
+$BASICSTYLE__h5: bold 0.9em $serif;
+$BASICSTYLE__h6: bold 0.8em $serif;
+$BASICSTYLE__p: 100 1.12em/1.3 $serif;
+$BASICSTYLE__li: 100 1.12em/1.3 $serif;
+$BASICSTYLE__blockquote: $serif 0.9em;
+
+$BASICSTYLE__defaulttext-color: #333;
+$BASICSTYLE__link-color: #00f;
+$BASICSTYLE__link-color--visited: #aaa;
+$BASICSTYLE__link-color--hover: #f00;
+$BASICSTYLE__link-color--active: #ff0;
+
+
+$BASICSTYLE__selection-color: #ff0;
+
+*/
+
+
+a {
+	&:link {
+		color: $BASICSTYLE__link-color;
+	}
+	&:visited {
+		color: $BASICSTYLE__link-color--visited;
+	}
+	&:hover,
+	&:visited:hover,
+	&:focus {
+		color: $BASICSTYLE__link-color--hover;
+	}
+	&:active, &:visited:active {
+		color: $BASICSTYLE__link-color--active;
+	}
+}
+
+::-moz-selection {
+	background: $BASICSTYLE__selection-color;
+}
+::selection {
+	background: $BASICSTYLE__selection-color;
+}
+
+
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+h1 {
+	font: $BASICSTYLE__h1;
+}
+h2 {
+	font: $BASICSTYLE__h2;
+}
+h3 {
+	font: $BASICSTYLE__h3;
+}
+h4 {
+	font: $BASICSTYLE__h4;
+}
+h5 {
+	font: $BASICSTYLE__h5;
+}
+h6 {
+	font: $BASICSTYLE__h6;
+}
+p, dd, dt {
+	font: $BASICSTYLE__p;
+}
+li {
+	font: $BASICSTYLE__li;
+}
+p {
+	margin-top: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	
+	a, a:visited {
+		@include no-nice-underlines();
+		color: $BASICSTYLE__defaulttext-color;
+	}
+}
+
+.ac-hiddenVisually {
+	@include hide();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,103 @@
+@mixin fixed-position() {
+	top: 0;
+    bottom: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    clip: rect(0 auto auto 0);
+    clip: rect(0, auto, auto, 0);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+	@supports (not ( clip: rect(0, auto, auto, 0) )) and (not ( clip: rect(0 auto auto 0) )) {
+		clip: auto;
+		-webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+	}
+    
+}
+
+
+@mixin ext-border($border_style, $width, $offset, $placement:"below", $position:"left") {
+	& {
+		position: relative;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		border-top: $border_style;
+		width: $width;
+
+		@if $placement == 'above' {
+			top: 0;
+			top: $offset;
+		}
+		@if $placement == 'below' {
+			bottom: 0;
+			bottom: $offset;
+		}
+
+		@if $position == 'left' {
+			left: 0;
+		}
+		@if $position == 'center' {
+			left: calc(50% - (#{$width}/2));
+		}
+		@if $position == 'right' {
+			right: 0;
+		}
+	}
+}
+
+@mixin cols($cols_number, $cols_gap, $cols_border) {
+	-webkit-column-count: $cols_number;
+	-moz-column-count: $cols_number;
+	column-count: $cols_number;
+
+	-webkit-column-gap: $cols_gap;
+	-moz-column-gap: $cols_gap;
+	column-gap: $cols_gap;
+
+	-webkit-column-rule: $cols_border;
+	-moz-column-rule: $cols_border;
+	column-rule: $cols_border;
+}
+@mixin cleanlist($border, $item-padding) {
+	margin: 0;
+	padding: 0;
+	
+	li {
+		list-style: none;
+		margin: 0;
+		
+		a {
+			border-top: $border;
+			display: block;
+			padding: $item-padding 0;
+		}
+		
+		&:first-child {
+			a {
+				border: none;
+			}
+		}
+	}
+}
+@mixin no-nice-underlines() {
+	background-image: none;
+	text-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

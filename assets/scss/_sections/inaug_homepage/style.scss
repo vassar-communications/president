@@ -1,0 +1,188 @@
+.u-pageHome {
+	background: #000;
+	border: none;
+
+	.row {
+		background: #fff;
+	}
+	.maintitle {
+		display: block;
+		padding: 0.3em 0;
+		display: block;
+	    line-height: 1;
+	    color: #fff;
+	}
+	.title {
+		margin: 0;
+		width: 100%;
+
+    	@media screen and (min-width: $medium) {
+			font-size: 4em;
+		}
+		
+		&:after {
+			content: "";
+			position: absolute;
+			background-image: url("../img/acorn-white.png");
+			width: 2rem;
+			height: 2rem;
+			background-repeat: no-repeat;
+			background-size: contain;
+			margin-left: -1rem;
+			margin-top: 2rem;
+		}
+	}
+	.supertitle,
+	.subtitle {
+		font-size: 0.3em;
+		display: block;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		color: #aaa;
+	    width: 69%;
+	    margin: 0 auto;
+
+    	@media screen and (min-width: $small) {
+			width: 100%;
+	    }
+	}
+	.titleContainer {
+		text-align: center;
+		padding: 3em 1em 2em 1em;
+
+    	@media screen and (min-width: $medium) {
+			padding: 8em 1em 4em 1em;
+		}
+    	@media screen and (min-width: $large) {
+	    	padding: 0;
+	    }
+	    .date-info {
+		    color: #aaa;
+		    position: relative;
+		    z-index: 9;
+	    }
+	    a {
+		    &, &:visited {
+			    color: #fff;
+			    @include no-nice-underlines();
+		    }
+		    &:visited:hover, &:hover {
+			    color: #ce1e46;
+			    @include no-nice-underlines();
+		    }
+	    }
+	}
+	.u-Masthead__siteName {
+		display: none;
+	}
+	.u-lAside {
+		display: none;
+	}
+
+	.u-lFooter {
+		background: #F0EEEB;
+	}
+	.speakers {
+		.speaker__desc {
+			h3, p {
+				color: #fff;
+			}
+			p {
+				opacity: 0.6;
+			}
+		}
+	}
+
+
+	@media screen and (min-width: $small) {
+		
+		.bio h2 {
+			color: #882345;
+		}	
+		.u-Masthead__vassar--link b {
+			color: #c2004c;
+			color: #fff;
+			text-shadow: 0 2px 40px #000, 0 2px 40px #000, 0 2px 80px #000;
+		}
+		.u-Masthead__vassar {
+			top: 1em;
+			margin-left: 2em;
+			letter-spacing: 0.1em;
+			text-align: left;
+			font-size: 2em;
+			padding: 0 0 1em 0;
+			width: 10em;
+		}
+		h1 {
+			color: #fff;
+		}
+		h2 {
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 1em;
+			margin: 0 0 2em 0;
+			letter-spacing: 0.1em;
+		}
+		h3 a, h3 a:visited {
+			color: #ce1e46;
+		}
+		h3 a:hover, h3 a:visited:hover {
+			color: #000;
+		}
+		
+		.rowheader {
+			color: #882345;
+		}
+		
+		.theme--black {
+			background: #882345;
+			color: #dcbdc8;
+		}
+		.hasborder:before {
+			border-color: #c2004c;
+		}
+	}
+	@media screen and (min-width: $large) {
+		.u-Masthead__vassar {
+			width: 100%;
+		}
+	}
+	.row--panelists,
+	.row--speakers {
+		a, a:visited {
+			color: #935966;
+		}
+		a:hover, a:visited:hover {
+			color: #ce1e46;
+			color: #f00;
+		}
+	}
+	h2 {
+		font-weight: bold;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

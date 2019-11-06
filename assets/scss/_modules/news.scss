@@ -1,0 +1,20 @@
+.u-ArticleListItem__summary {
+	margin-bottom: 0;
+}
+.u-ArticleListItem__label.u-ArticleListItem__label--externalLink {
+	float: right;
+	display: none;
+}
+.u-ArticleListItem {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #c0004e;
+}
+.u-ArticleListItem__label--dateline__posted,
+.u-ArticleListItem__label--dateline__postedDate {
+	font: normal 0.75em $sans-serif;
+	color: #aaa;
+}
+.u-ArticleListItem__title {
+	margin: 0 0 0.15em 0;
+}

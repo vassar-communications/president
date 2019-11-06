@@ -1,0 +1,26 @@
+/*	This file contains a few overrides specific
+	to the Inauguration layout */
+
+
+
+.u-lFooter {
+	padding-bottom: 6em;
+}
+
+@media screen and (min-width: $medium) {
+	.u-NavSite {
+		width: 25%;
+	}
+	.u-lMain {
+		width: 75%;
+	}
+}
+.u-pageInner {
+	@media screen and (min-width: $medium) {
+		.u-lFooter {
+			width: 75%;
+			margin-left: 25%;
+			padding: 2em;
+		}
+	}
+}

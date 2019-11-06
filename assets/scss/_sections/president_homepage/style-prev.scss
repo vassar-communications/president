@@ -1,0 +1,102 @@
+.u-pageHome {
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-color: #eee;
+	border-top-width: 4em;
+	
+	background-image: url("http://cmspreview.vassar.edu/11thpresident/web/assets/images/hp-header.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	
+	&.searchOpen {
+		background-image: none;
+		background: #fff;
+	}
+
+	img:first-of-type {
+		display: none;
+	}
+
+	body {
+		margin-top: 90vh;
+		max-width: none;
+
+/*		background: #fff;
+		margin-right: 0;
+		width: 76%; */
+	}
+	.president-name {
+		color: #fff;
+	}
+
+
+	.u-lAside {
+		display: block;
+		width: 30%;
+		float: right;
+	}
+	.u-lContent {
+		width: 70%;
+		float: left;
+	}
+	.u-lHeader {
+		padding: 0;
+	}
+	.u-Masthead__siteName {
+	    font-size: 2.2em;
+		position: absolute;
+		top: 3em;
+		left: 2em;
+	}
+	.u-VCard {
+		margin-bottom: 0;
+	}
+	.u-lFooter {
+		width: 80%;
+		background: #F0EEEB;
+		float: right;		
+	}
+	.u-NavSite {
+		position: fixed;
+		bottom: 4vh;
+		left: 2em;
+
+	    .u-NavSite__item {
+		    border-color: rgba(255,255,255,0.2);
+		    color: #fff;
+			text-shadow: 0 0 2em rgba(0,0,0,1), 0 0 1em rgba(0,0,0,1);
+	    }
+	}
+	.u-Masthead__vassar {
+		.u-Masthead__vassar--link {
+			font-size: 2em;
+		}
+	}
+	.u-lMain {
+		float: none;
+		float: right;
+/*		margin-left: auto;
+		margin-right: auto; */
+		overflow: hidden;
+		position: relative;
+		z-index: 10;
+		background: #fff;
+		width: 100%;
+		width: 80%;
+		height: 100%;
+	}
+	.u-Masthead__siteName--link {
+		color: #fff;
+		text-shadow: 0 0 2em rgba(0,0,0,1), 0 0 1em rgba(0,0,0,1);
+	}
+
+
+	.Module.Module--mainContent.Module--fullWidth p {
+	    margin-bottom: 3em;
+	}
+
+}
+
+
+

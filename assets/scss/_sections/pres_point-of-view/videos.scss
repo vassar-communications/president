@@ -1,0 +1,46 @@
+.video__item {
+	margin-top: 0.8em;	
+	padding-top: 0.8em;
+	border-top: 1px solid #eee;
+	
+	div {
+	    clear: both;
+	    font-size: 1.2em;
+	}
+	&:first-child {
+		margin-top: 0;
+		padding-top: 0;
+		border-top: none;
+	}
+
+	.video__title {
+		margin-bottom: 0;
+	}
+	.video__date {
+	    margin: 0;
+	    font-size: 1em;
+	    font-weight: bold;
+
+    	@media screen and (min-width: $small) {
+		    float: left;
+		    margin-right: 0.4em;
+	    }
+	}
+	.video__caption {
+		line-height: 1.2;
+		font-size: 1.1em;
+		margin-top: 0.3em;
+/*		font-size: 0.8em;
+		font-family: $sans-serif;
+		font-weight: 400;
+		color: #888; */
+	}
+	.video__location {
+		margin: 0 0 0.2em 0;
+		font-size: 1em;
+		color: #888;
+	}
+	.u-Video {
+		margin: 0;
+	}
+}

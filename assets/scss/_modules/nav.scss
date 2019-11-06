@@ -1,0 +1,23 @@
+.u-NavSite__itemContainer {
+	/*	Generic list-items have a specific size applied to them. On
+		nav, the links also have a specific size. The size applied to
+		the list item compounds the size of the nav item. Setting the list-item
+		font-size to 1em basically undoes the font-size.
+	*/
+	font-size: 1em;
+}
+.u-NavSite__item {
+	padding: 0.6em 0;
+	border-bottom: 1px solid #eee;
+}
+.u-NavSite .u-NavSite__item svg {
+   height: 1.4em;
+}
+
+/*	Hide Home */
+/*
+.u-NavSite__level--1 > .u-NavSite__itemContainer:first-child {
+	display: none;
+}
+*/
+

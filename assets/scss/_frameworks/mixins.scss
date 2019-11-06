@@ -1,0 +1,218 @@
+/*	FUNCTIONS
+	========= */
+
+
+@function isCustomProperty($value) {
+	/*	This checks a value to see if it's a CSS
+		custom property. If it is,, you might want
+		to include a fallback. */
+	//	inspect converts value to string
+	$valuestring: inspect($value);
+    @if (str-index($valuestring, 'var(--')) {
+	    @return true;
+    }
+    @else {
+	    @return false;
+    }
+}
+
+
+
+
+/*	MIXINS
+	====== */
+
+@mixin linkColors($link, $visited, $hover, $active) {
+	&:link {
+		color: $link;
+	}
+	&:visited {
+		color: $visited;
+	}
+	&:hover, &:visited:hover, &:focus {
+		color: $hover;
+	}
+	&:active, &:visited:active {
+		color: $active;
+	}
+}
+@mixin unBulletedList() {
+	padding-left: 0;
+	margin-left: 0;
+	li {
+		list-style: none;
+	}
+}
+@mixin very-nice-underlines($underlinecolor, $bgcolor, $border-space:tight, $underlinecolorFallback: #aaa, $bgcolorFallback: #fff) {
+	@if isCustomProperty($bgcolor) {
+		text-shadow: .03em 0 $bgcolorFallback, -.03em 0 $bgcolorFallback, 0 .03em $bgcolorFallback, 0 -.03em $bgcolorFallback, .06em 0 $bgcolorFallback, -.06em 0 $bgcolorFallback, .09em 0 $bgcolorFallback, -.09em 0 $bgcolorFallback, .12em 0 $bgcolorFallback, -.12em 0 $bgcolorFallback, .15em 0 $bgcolorFallback, -.15em 0 $bgcolorFallback;
+	}
+	text-shadow: .03em 0 $bgcolor, -.03em 0 $bgcolor, 0 .03em $bgcolor, 0 -.03em $bgcolor, .06em 0 $bgcolor, -.06em 0 $bgcolor, .09em 0 $bgcolor, -.09em 0 $bgcolor, .12em 0 $bgcolor, -.12em 0 $bgcolor, .15em 0 $bgcolor, -.15em 0 $bgcolor;
+
+	text-decoration: none;
+	// textShadowToCropUnderline backgroundColor
+	@if isCustomProperty($underlinecolor) {
+		background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient($underlinecolorFallback, $underlinecolorFallback);
+	}
+	background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient($underlinecolor, $underlinecolor);
+
+	background-size: .05em 1px, .05em 1px, 1px 1px;
+	background-repeat: no-repeat, no-repeat, repeat-x;
+
+	@if $border-space == tight {
+		background-position: 0% 84%, 100% 84%, 0% 84%;
+	}
+	@else if $border-space == "loose" {
+		background-position: 0% 94%, 100% 94%, 0% 94%;
+	}
+	else {
+		background-position: 0% #{$border-space}, 100% #{$border-space}, 0% #{$border-space};		
+	}
+	&:before, &:after, *, *:before, *:after {
+		text-shadow: none;
+	}
+	&::-moz-selection {
+		@include no-nice-underlines();
+		background: $BASICSTYLE__selection-color;
+	}
+	&::selection {
+		@include no-nice-underlines();
+		background: $BASICSTYLE__selection-color;
+	}
+}
+@mixin no-nice-underlines() {
+	background-image: none;
+	text-shadow: none;
+}
+@mixin hover_state($hoverstatecolor--bg, $hoverstatecolor--text) {
+	&:hover, &:visited:hover {
+		background: $hoverstatecolor--bg;
+		color: $hoverstatecolor--text;
+	}
+}
+@mixin ext-border($border_style, $width, $offset, $placement:"below", $position:"left") {
+	& {
+		position: relative;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		border-top: $border_style;
+		width: $width;
+
+		@if $placement == 'above' {
+			top: 0;
+			top: $offset;
+		}
+		@if $placement == 'below' {
+			bottom: 0;
+			bottom: $offset;
+		}
+
+		@if $position == 'left' {
+			left: 0;
+		}
+		@if $position == 'center' {
+			left: calc(50% - (#{$width}/2));
+		}
+		@if $position == 'right' {
+			right: 0;
+		}
+	}
+}
+
+@mixin textBackground($background, $fallback: #888) {
+	/* Divya Manian's solution: http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html */
+	color: $fallback;
+	-webkit-text-fill-color: transparent;
+	background: -webkit-linear-gradient(transparent, transparent),
+	         $background repeat;
+	background: -o-linear-gradient(transparent, transparent);
+	-webkit-background-clip: text;
+}
+
+@mixin inlinelist() {
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline;
+		list-style: none;
+	}
+}
+@mixin multiCols($cols) {
+	-webkit-column-count: $cols;
+	-moz-column-count: $cols;
+	column-count: $cols;
+}
+@mixin transition($property:all, $duration:0.25s, $timingfnc:linear, $delay:0s) {
+	transition: $property $duration $timingfnc $delay;
+}
+@mixin hide() {
+	position: absolute;
+	visibility: hidden;
+}
+
+
+/*	Media queries
+	============= */
+
+@mixin small() {
+    @media screen and (min-width: $small) {
+        @content;
+    }
+}
+@mixin medium() {
+    @media screen and (min-width: $medium) {
+        @content;
+    }
+}
+@mixin large() {
+    @media screen and (min-width: $large) {
+        @content;
+    }
+}
+
+
+/*	Visual niceties
+	=============== */
+
+
+/*	BlockShadow
+	-----------
+	Sets a long shadow under the specified text
+*/
+
+@function blockShadow($color, $size) {
+    $shadow: 1px 1px $color;
+
+    @for $i from 1 through $size {
+        $shadow: #{$shadow}, #{$i}px #{$i}px #{$color};
+    }
+    @return $shadow;
+}
+@mixin setBlockShadow($color, $size:100, $fallbackColor:#aaa) {
+	//	If we're using CSS variables, include a fallback.
+	//	Fallback doubles the generated code, so only generate it
+	//	in the event that a CSS custom property is specified.
+	@if isCustomProperty($color) {
+		text-shadow: blockShadow($fallbackColor, $size);
+    }
+	text-shadow: blockShadow($color, $size);
+}
+
+
+
+@mixin font-face($font-name, $font-path, $font-format:eot woff2 woff ttf) {
+	$formatlist: null;
+	@each $format in $font-format {
+
+		$formatlist: append($formatlist, url('#{$font-name}.#{$format}') format('#{$format}'), comma);
+	}
+	
+	@font-face {
+	  font-family: quote($font-name);
+  	src: $formatlist;
+	}
+}
+
+

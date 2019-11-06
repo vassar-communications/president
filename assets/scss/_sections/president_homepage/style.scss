@@ -1,0 +1,316 @@
+.u-pageHome {
+
+	border: none;
+//	border-top: 0.3em solid #882345;
+	padding: 0;
+	
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0.3em;
+		width: 100%;
+		height: 1px;
+		border-top: 1px solid #882345;
+	}
+	.college {
+		font-size: 0.8em;
+		display: block;
+	}
+	body {
+		margin: 0;
+		max-width: none;
+	}
+	.ticker {
+		position: absolute;
+		background: #fff;
+		width: 16em;
+		top: 0;
+		right: 1em;
+		padding: 1em;
+	}
+	.u-NavSite {
+		clear: left;
+	}
+	.u-lAside {
+		display: block;
+	}
+	.u-lHeader {
+		@media screen and (min-width: $medium) {
+			float: left;
+		}
+	}
+	.ticker {
+
+		top: 1em !important;
+		background: #000 !important;
+
+		h3 {
+			color: #aaa !important;
+		}
+		a {
+			color: #fff !important;
+		}
+
+		h3 {
+			letter-spacing: 0.1em;
+			margin: 0;
+			font-family: $sans-serif;
+			font-size: 0.7em;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 0.8em;
+		}
+		ul, li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-family: $serif;
+			
+			a {
+				display: block;
+				line-height: 1.1;
+			}
+		}
+	}
+	
+	.u-Masthead__siteName {
+		margin-top: 0;
+		padding-top: 4em;
+		text-align: center;
+
+		@media screen and (min-width: $medium) {
+			padding-top: 0;
+			text-align: left;
+		}
+
+		.office-name {
+			font-family: $sans-serif;
+			text-transform: uppercase;
+			font-size: 0.9rem;
+			display: block;
+			margin-bottom: 0.1em;
+			font-family: $sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 0.1rem;
+			color: #ABA49A;
+
+			@media screen and (min-width: $medium) {
+				padding-right: 1em;
+			}
+		}
+		.president-name {
+			color: #882345;
+			font-family: $serif-display;
+		    text-transform: uppercase;
+		    letter-spacing: 0.05em;
+		}
+	}
+
+	
+
+	@media screen and (min-width: $small) {
+		.u-Masthead {
+			display: flex;
+			flex-flow: column wrap;
+			flex-direction: column-reverse;
+			padding-right: 0;
+		}
+		.u-Masthead__siteName {
+			margin-top: 0;
+			padding: 0 0 1em 0;
+		}
+		.u-Masthead__vassar {		
+			padding: 3rem 0 0.45rem 0;
+			text-align: center;
+			font-size: 3em;
+			font-family: $serif-display;
+			text-transform: uppercase;
+
+			.u-Masthead__vassar--link {
+				color: #882345;
+			}
+		}
+	}	
+	@media screen and (min-width: $medium) {
+		.u-Masthead__siteName {
+			margin-top: 0;
+			padding: 0;
+		}
+		.u-lFooter {
+			margin: 0;
+			padding: 1em 4em;
+		}
+		.u-Search {
+			top: 0.4em;
+			right: 1rem;
+	
+			.u-Search__button {
+				background: #fff;
+				padding: 0.4em;
+				border-radius: 50%;
+				width: 2em;
+				height: 2em;
+				
+				svg {
+					fill: #882345;
+				}
+				
+				&:hover {
+					background: #882345;
+					
+					svg {
+						fill: #fff;
+					}
+				}
+			}
+		}
+		.u-Masthead__vassar {		
+			padding: 0;
+			text-align: left;
+			font-size: 1em;
+			top: 1.1em;
+	
+			.u-Masthead__vassar--link {
+				color: #882345;
+				font-size: 3em;
+				font-family: $serif-display;
+				text-transform: uppercase;
+			}
+		}
+		.u-Masthead__siteName {
+			width: 100%;
+		}
+
+
+		.u-lHeader {
+			padding: 0;
+		}
+		.u-Masthead,
+		.u-NavSite {
+			padding: 1.8rem;
+		}
+		.u-Masthead__vassar {
+			position: static;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			border-bottom: 2px solid #F2EFE9;
+		    padding-bottom: 0.4em;
+		    margin-bottom: 0.8em;
+		}
+		.u-lContent {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			margin-top: -1px;
+
+			/*
+			height: 100vh;
+			min-height: 32em;
+			background-image: url(http://cmspreview.vassar.edu/11thpresident/web/assets/images/hp-header.jpg);
+			background-size: cover;
+			background-position: center center;
+			
+			img {
+				display: none;
+			}
+			*/
+		}
+		.u-lFooter {
+			background: #F2EFE9;
+			float: right;
+			
+			.SocialAccount__iconList,
+			.u-VCard--site {
+				text-align: left;
+			}
+		}
+
+		.u-lMain {
+			padding: 0;
+			width: 76%;
+			overflow: hidden;
+		}
+		.u-lFooter {
+			width: 76%;
+		}
+		.u-lHeader,
+		.u-NavSite {
+			width: 24%;
+		}
+		.u-lContent {
+			float: left;
+		}
+	}
+	@media screen and (min-width: $large) {
+		.u-lMain,
+		.u-lFooter {
+			width: 80%;
+		}
+		.u-lHeader,
+		.u-NavSite {
+			width: 20%;
+		}
+	}
+}
+
+.hp-module {
+	h2 {
+		font-weight: bold;
+		
+		a {
+			background: none;
+			text-shadow: none;
+			
+			&:hover, &:visited:hover {
+				color: #746661;
+			}
+		}
+	}
+}
+.u-pageHome .u-lContent .u-Figure {
+	margin: 0;
+margin-top: -1vw;	
+}
+
+@media only screen and (min-width: 50em) {
+	.u-pageHome {
+		background: #F2EFE9;
+	}
+
+	.u-pageHome .PageContentInner {
+		position: relative;
+	}
+	
+	.u-pageHome .PageContentInner:before {
+	    background: #fff;
+	    z-index: -1;
+	    position: absolute;
+	    content: "";
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    width: 24%;
+	    height: auto;
+	    height: 100vh;
+	    position: fixed;
+	}
+}	
+@media only screen and (min-width: 62.5em) {
+	.u-pageHome .PageContentInner:before {
+		width: 20%;
+	}
+}
+
+@media only screen and (min-width: 40em) and (max-width: 72.5em) {
+	.u-pageHome .u-lAside {
+		top: 32em !important;
+	}
+}
+
+
+
+
+
+
+

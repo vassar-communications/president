@@ -1,0 +1,7 @@
+@media screen and (min-width: $small) {
+	.u-NavSite__main {
+		position: -webkit-sticky;
+	    position: sticky;
+	    top: 20px;	
+	}
+}

@@ -1,0 +1,27 @@
+.u-ArticleGroup {
+	.u-ArticleListItem__title {
+		font-size: 1.2em !important;
+		letter-spacing: 0 !important;
+		text-transform: none !important;
+		margin-top: 0 !important;
+	}
+	.u-ArticleListItem {
+		padding-bottom: 0;
+	}	
+}
+.u-ArticleNavGroup__navButton {
+	&.u-ArticleNavGroup__navButton--more {
+		color: #666;
+	}
+	&.u-ArticleNavGroup__navButton--archive {
+		color: #aaa;
+	}
+}
+
+
+.u-ArticleListItem .u-ArticleListItem__link,
+.u-ArticleListItem .u-ArticleListItem__link:hover,
+.u-ArticleNavGroup .u-ArticleNavGroup__navButton,
+.u-ArticleNavGroup .u-ArticleNavGroup__navButton:hover {
+	@include no-nice-underlines();	
+}

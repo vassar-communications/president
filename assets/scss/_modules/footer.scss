@@ -1,0 +1,41 @@
+/*
+	Add the following to your site's config file
+	--------------------------------------------
+
+	$open-search__border-color: #eee
+
+*/
+
+.u-VCard__adr,
+.u-VCard__info,
+.u-List--site {
+	margin: 0 0 0.4em 0;
+}
+.u-VCard__item.u-VCard__org {
+	display: block;
+	font-family: $serif;
+	margin-bottom: 1em;
+}
+
+.SocialAccount__iconList {
+	padding: 0;
+	margin-bottom: 3em;
+	text-align: center;
+	
+	li {
+		list-style: none;
+		font-size: 0.9em;
+	}
+}
+
+.u-lFooter { 
+	* {
+		font-size: 1rem !important;
+	}
+	.u-VCard__label {
+		display: none;
+	}
+	.u-VCard__org {
+		font-weight: bold;
+	}
+}

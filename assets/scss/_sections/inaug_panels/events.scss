@@ -1,0 +1,95 @@
+.event__title {
+	margin-top: 0;
+	text-transform: none;
+	letter-spacing: normal;
+}
+.event__desc {
+	p {
+		line-height: 1.1;
+	}
+}
+
+.schedule {
+	margin-bottom: 4em;
+
+	.event__desc {
+		column-count: 1;
+		column-gap: 0;
+		
+		p {
+			display: block;
+		}
+	}
+
+	.event {
+	    border-top: 1px solid #c0004e;
+		overflow: hidden;
+	    padding: 1em 0;
+	    	
+		.event__location,
+		.event__time {
+		    font-family: $sans-serif;
+		    font-size: 0.9em;
+		    font-weight: normal;
+		}
+	
+		@media screen and (min-width: $medium) {
+			.event__location,
+			.event__time {
+				clear: left;
+				float: left;
+				margin-bottom: 0.2em;
+				width: 30%;
+			}
+			.event__title,
+			.event__desc {
+				float: right;
+				padding-left: 1em;
+				width: 70%;
+			}
+		}
+	}
+}
+
+// .schedule--archived {
+	.event__desc {
+		@media screen and (min-width: $medium) {
+			column-count: 2;
+			column-gap: 2em;
+		}
+		em {
+			font-size: 0.8em;
+			line-height: 1.2;
+			display: block;
+			margin-top: 0.2em;
+		}
+		
+		p {
+			display: inline-block;
+			margin-bottom: 0.6em;
+		}
+	}
+// }
+
+
+
+.schedule__date {
+	font-family: $serif-display;
+	font-weight: normal;
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.07em;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+	margin-top: 3em;
+//	@include ext-border(1px solid #c2004c, 3rem, 0, below, left);	
+}
+
+
+
+
+
+
+//	Ugh. What a day.
+
+

@@ -1,0 +1,103 @@
+.u-lMain {
+	.row--panelists {
+		a {
+			@include very-nice-underlines(#ce1e46, #F0EEEB);
+		}
+		a:hover {
+			@include no-nice-underlines();
+		}
+	}
+	.row--speakers {
+		a {
+			@include very-nice-underlines(#ce1e46, #fff);
+		}
+		a:hover {
+			@include no-nice-underlines();
+		}
+	}
+}
+.row--speakers,
+.row--panelists {
+	overflow: hidden;
+
+	.row__title {
+		.row__subtitle {
+			display: block;
+			text-transform: none;
+			letter-spacing: 0;
+			font-style: italic;
+			margin-top: 0.4em;
+			font-size: 0.9em;
+			
+			a {
+				@include no-nice-underlines();
+			}
+		}
+	}
+
+	.col {
+		margin: 0 auto;
+		max-width: 60em;
+	}
+	.speaker__name {
+		letter-spacing: normal;
+		text-transform: none;
+		font-weight: 100;
+		font-size: 1.2em;
+		margin: 0;
+	}
+	.speaker__title {
+	    font-size: 1em;
+	    line-height: 1.2;
+	    font-style: italic;
+	}
+}
+.row.row--speakers {
+
+	.speakerslist {
+		@media screen and (min-width: $medium) {
+			-webkit-column-count: 2; /* Chrome, Safari, Opera */
+			-moz-column-count: 2; /* Firefox */
+			column-count: 2;
+	
+			-webkit-column-gap: 2em; /* Chrome, Safari, Opera */
+			-moz-column-gap: 2em; /* Firefox */
+			column-gap: 2em;
+
+			.item {
+				display: inline-block;
+				width: 100%;
+	   		}
+		}
+	}
+}
+.row--panelists {
+	background: $gray-bg !important;
+	
+	.panel {
+		@media screen and (min-width: $medium) {
+			width: 50%;
+			float: left;
+
+			&.panel--1 {
+				padding-right: 1em;
+			}
+			&.panel--2 {
+				padding-left: 1em;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

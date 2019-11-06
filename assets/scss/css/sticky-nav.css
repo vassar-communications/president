@@ -1,0 +1,50 @@
+/*
+Error: Undefined variable: "$medium".
+        on line 1 of /Users/csilverman/Documents/dev/in-github/v-projects/Inaug-President/scss/_modules/sticky-nav.scss
+
+1: @media screen and (min-width: $medium) {
+2: 	.faq__index {
+3: 		position: sticky;
+4: 		top: 0;
+5: 	}
+6: }
+
+Backtrace:
+/Users/csilverman/Documents/dev/in-github/v-projects/Inaug-President/scss/_modules/sticky-nav.scss:1
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/script/tree/node.rb:50:in `perform'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:540:in `block in run_interp_no_strip'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:538:in `map'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:538:in `run_interp_no_strip'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:545:in `run_interp'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:510:in `visit_media'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:115:in `with_frame'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/engine.rb:278:in `render'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:423:in `run'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/CodeKit 2.app/Contents/Resources/engines/scss/bin/scss:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$medium\".\A         on line 1 of /Users/csilverman/Documents/dev/in-github/v-projects/Inaug-President/scss/_modules/sticky-nav.scss\A \A 1: @media screen and (min-width: $medium) {\A 2: 	.faq__index {\A 3: 		position: sticky;\A 4: 		top: 0;\A 5: 	}\A 6: }"; }

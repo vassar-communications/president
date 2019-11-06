@@ -1,0 +1,534 @@
+.u-NavSite__main .u-NavSite__level--1 > .u-NavSite__itemContainer:first-child {
+	a {
+		font-weight: bold;
+	    font-size: 1.1em;
+	    text-transform: uppercase;
+	    letter-spacing: 0.1em;
+	    font-family: "goudy-old-style", Georgia, Times, serif;
+	    
+	    svg {
+		    display: none;
+	    }
+	}
+}
+
+
+.u-pageHome {
+
+	.u-lAside {
+		display: block;
+	}
+	
+	.ticker {
+		h3 {
+			letter-spacing: 0.1em;
+			margin: 0;
+			font-family: $sans-serif;
+			font-size: 0.7em;
+			font-weight: bold;
+			text-transform: uppercase;
+			margin-bottom: 0.8em;
+		}
+		ul, li {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-family: $serif;
+			
+			a {
+				display: block;
+				line-height: 1.1;
+			}
+		}
+	}
+
+	&.design-nav_top {
+		background: #fff;
+		border: none;
+		min-height: 100vh;
+		padding: 0;
+		border-top: 0.3em solid #882345;
+		padding-top: 10em;
+		
+		.u-NavSite__main .u-NavSite__itemContainer:nth-child(2) {
+			a {
+				font-weight: bold;
+			}
+		}
+		
+		body {
+			max-width: none;
+			margin: 0;
+		}
+		.u-lContent {
+			display: none;
+		}
+		.u-lMain {
+			background-image: url(http://cmspreview.vassar.edu/11thpresident/web/assets/images/hp-header.jpg);
+			background-size: cover;
+			background-position: center center;
+			width: 100%;
+			min-height: 100vh;
+		}
+		.u-lHeader {
+			padding: 0;
+			position: absolute;
+			top: 0;
+	    
+			.u-Masthead__vassar {
+				.u-Masthead__vassar--link {
+					font-size: 1.8em;
+					width: 6em;
+				}
+			}
+			.u-Masthead__siteName {
+				margin-top: 2.4em;
+				margin: 1rem;
+				margin-top: 4rem;
+			}
+		}
+		.ticker {
+			position: absolute;
+			top: 1.2em;
+			right: 4em;
+		}
+		.u-lFooter {
+			background: #F2EFE9;			
+		}
+		.u-NavSite__main {
+		    width: 100%;
+		    padding: 0;
+			position: absolute;
+			right: 0;
+			text-align: right;
+			top: 8em;
+			z-index: 99999;
+			
+			.u-NavSite__item--isCurrent {
+				display: none !important;
+			}
+			.u-NavSite__itemContainer {
+				display: inline;
+				margin-right: 0.7em;
+				
+				.u-NavSite__item {
+					display: inline;
+					border: none;
+
+					&.icon-twitter {
+						display: inline-block !important;
+					}
+				}
+			}
+		}
+		&.nav--right {
+			.u-lHeader {
+				width: 100%;
+
+				.u-Masthead__siteName {
+					margin-top: 4.4rem;
+				}
+			}
+			.office-name {
+				letter-spacing: 0.1em;
+			}
+			.u-Masthead__siteName {
+				font-size: 1.5em;
+				letter-spacing: 0;
+			}
+			.u-lMain {
+				margin-top: -2em;
+			}
+			.u-NavSite__main {
+				top: 5.8em;
+			}
+			.ticker {
+				display: flex;
+				width: 28.8em;
+				
+				h3 {
+					margin-right: 1em;
+					margin-top: 0.1em;					
+				}
+			}
+
+			&.nav--center {
+				.u-NavSite__main {
+					background: #F2EFE9;
+					text-align: center;
+					padding: 0.2em;
+					font-size: 0.9em;
+				}
+				.u-NavSite__main {
+					top: 7em;
+				}
+				.u-lHeader .u-Masthead__siteName {
+				    margin-top: 3.1rem;
+				}
+			}
+			&.nav--minimal {
+				transition: margin 0.4s;
+				position: relative;
+				
+				.u-Search {
+					transition: all 0.4s;
+					right: 4em;
+					top: 0.4em;
+					
+					svg {
+						fill: #000;
+					}
+				}
+				.u-lHeader .u-Masthead__siteName {
+					margin-top: 4rem;
+				}
+				.u-NavSite__main {
+					padding-top: 3em;
+					
+					.u-NavSite__itemContainer {
+						display: block;
+						padding: 1em 4em;
+						text-align: left;
+					}
+					.u-NavSite__item {
+						color: #fff;
+						
+						&:hover {
+							opacity: 0.4;
+						}
+					}
+   				}
+   				   				
+
+				.u-NavSite__main {
+					width: 20em;
+					position: fixed !important;
+					top: 0 !important;
+					border-top: 0.3em solid #882345;
+					right: -20em !important;
+					left: auto !important;
+					height: 100vh;
+					background: #882345;
+					transition: all 0.4s;
+				}
+				
+				$icon_size: 1.1rem;
+				$border-size: 2px;
+				
+				.ac-NavAnchor--menu {
+					display: block;
+					position: absolute;
+					top: 1.3rem;
+					right: 1.4rem;
+										
+				    width: 1.2rem;
+					height: 1.2rem;
+					overflow: hidden;
+					text-indent: -3em;
+					
+					padding: 0;
+					
+					&:before,
+					&:after {
+						content: "";
+						position: absolute;
+						left: 0;
+						transition: all 0.4s;
+					}
+					&:before {
+						border: #{$border-size} solid #000;
+						border-left: none;
+						border-right: none;
+						width: calc(#{$icon_size} + 0.2rem);
+						height: $icon_size;
+						
+					}
+					&:after {
+						border-top: #{$border-size} solid #000;
+						top: calc((#{$icon_size} / 2) - (#{$border-size} / 2));
+						height: 1px;
+						width: calc(#{$icon_size} + 0.2rem);
+					}
+				}
+				
+				&.navOpen {
+					margin-right: 20em;
+
+					.u-Search {
+						right: 1.4em;
+					}
+					.u-NavSite__main {
+						right: 0 !important;
+					}
+					.ac-NavAnchor--menu {
+						right: -2.6em;
+						z-index: 100000;
+						top: 1.4em;
+						
+						&:before,
+						&:after {
+							top: 0.5em;
+							border-color: #fff;
+						}
+						
+						&:before {
+							border: none;
+							border-top: #{$border-size} solid #fff;
+							transform: rotate(45deg);
+							height: 1px;
+						}
+						&:after {
+							transform: rotate(-45deg);
+						}
+					}
+				}
+				
+				
+				.ticker {
+					display: block;
+					top: 1em;
+					right: 8em;
+					width: 20em;
+				}
+			}
+		}
+	}
+
+	&.design-nav_in_cols {
+		.u-NavSite__main {
+			column-count: 3;
+			width: 40em;
+			text-align: left;
+
+			.u-NavSite__itemContainer {
+				display: block;
+			}
+		}
+	}
+	&.design-nav_side_columns {
+		border: none;
+		border-top: 0.3em solid #882345;
+		padding: 0;
+		
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0.3em;
+			width: 100%;
+			height: 1px;
+			border-top: 1px solid #882345;
+		}
+		.college {
+			font-size: 0.8em;
+			display: block;
+		}
+		body {
+			margin: 0;
+			max-width: none;
+		}
+		.u-Masthead__vassar {
+			top: 1.1em;
+
+			.u-Masthead__vassar--link {
+				font-size: 1.8em;
+			}
+		}
+		&:not(.searchOpen) {
+			.u-Search {
+				position: relative;
+				width: 20%;
+			}
+		}
+		.ticker {
+			position: absolute;
+			background: #fff;
+			width: 16em;
+			top: 0;
+			right: 1em;
+			padding: 1em;
+		}
+		.u-lMain {
+			padding: 0;
+			width: 80%;
+			overflow: hidden;
+		}
+		.u-lFooter {
+			width: 80%;
+		}
+		.u-lHeader,
+		.u-NavSite {
+			width: 20%;
+		}
+		.u-lHeader {
+			padding: 0;
+		}
+		.u-Masthead,
+		.u-NavSite {
+			padding: 1.8rem;
+		}
+		.u-Masthead {
+			display: flex;
+			flex-flow: column wrap;
+			flex-direction: column-reverse; 			
+		}
+		.u-Masthead__vassar {
+			position: static;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			border-bottom: 1px solid #ccc;
+		    padding-bottom: 0.4em;
+		    margin-bottom: 0.4em;
+   		}
+		.u-Masthead__siteName {
+			width: 100%;
+		}
+		.u-NavSite {
+			clear: left;
+		}
+		.u-lContent {
+			margin: 0;
+			padding: 0;
+			background-image: url(http://cmspreview.vassar.edu/11thpresident/web/assets/images/hp-header.jpg);
+			background-size: cover;
+			background-position: center center;
+			width: 100%;
+			height: 100vh;
+			min-height: 32em;
+			margin-top: -1px;
+			
+			img {
+				display: none;
+			}
+		}
+		.u-lFooter {
+			background: #F2EFE9;
+			float: right;
+			
+			.u-VCard--site {
+				text-align: left;
+			}
+		}
+		&.nav--nobg {
+			.college {
+				font-size: 1em;
+				display: inline;
+			}
+			.president-name {
+				letter-spacing: 0;
+				font-size: 0.8em;
+			}
+			
+			&.darkticker {
+				.ticker {
+					top: 1em;
+					background: #000;
+	
+					h3 {
+						color: #aaa;
+					}
+					a {
+						color: #fff;
+					}
+				}
+			}
+			
+			
+			.office-name {
+				font-size: 0.5em;
+			}
+			.u-lHeader {
+				background: #fff;
+				left: 1em;
+				position: absolute;
+				width: 21em;
+				z-index: 2;
+   			}
+   			.u-NavSite__main {
+	   			position: absolute;
+	   			top: 12em;
+	   			padding-left: 3em;
+   			}
+   			.u-lMain {
+				&:after {
+					position: absolute;
+					content: "";
+					top: 0;
+					left: 0;
+					height: 100%;
+					width: 10em;
+					
+					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,7db9e8+100&0.55+0,0+100 */
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0.55) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0.55) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  rgba(0,0,0,0.55) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8c000000', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+	
+				}
+   			}
+			.u-lMain, .u-lFooter {
+				width: 100%;
+			}
+			.u-NavSite__item {
+				border: none;
+				color: #fff;
+				
+				&:hover {
+					opacity: 0.6;
+				}
+			}
+			&:not(.searchOpen) .u-Search {
+				width: 31%;
+				
+				svg {
+					fill: #fff;
+				}
+			}
+			.u-VCard--site {
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+/*
+.u-pageHome {
+	background: #aaa;
+	background-image: url(http://cmspreview.vassar.edu/11thpresident/web/assets/images/hp-header.jpg);
+	background-size: cover;
+	background-position: center center;
+	border: none;
+	min-height: 100vh;
+	padding: 0;
+	
+	body {
+		max-width: none;
+		margin: 0;
+		
+		&:before {
+			height: 100vh;
+			position: fixed;
+			width: 18em;
+			content: "";
+			background: #fff;
+		}
+	}
+	.u-lContent {
+		display: none;
+	}
+	.u-lHeader {
+		.u-Masthead__vassar {
+			.u-Masthead__vassar--link {
+				font-size: 2em;
+				width: 6em;
+			}
+		}
+	}
+}
+*/

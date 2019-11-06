@@ -1,0 +1,91 @@
+
+/*	Typography
+	---------- */
+
+$sans-serif: europa, Helvetica, Arial, sans-serif;
+$serif: "chaparral-pro", Georgia, Times, serif;
+$serif-display: "goudy-old-style", Georgia, Times, serif;
+
+$fontSize-xs: .8em;
+$fontSize-s: .9em;
+$fontSize-m: 1em;
+$fontSize-l: 1.2em;
+$fontSize-xl: 1.4em;
+$fontSize-xxl: 1.6em;
+
+$BASICSTYLE__link-color: #ce1e46;
+$BASICSTYLE__link-color--hover: #000;
+$BASICSTYLE__link-color--visited: #AB6776;
+$BASICSTYLE__link-color--active: #f00;
+
+$BASICSTYLE__selection-color: #E3C3CF;
+
+
+$gray-bg: #F0EEEB;
+$pink: #ce1e46;
+$burgundy: #935966;
+$burgundy-1: #935966;
+$default-text-color: #444;
+
+$paragraph-lowerMargin: 1em;
+
+
+/*	Basic type/colors
+	----------------- */
+	
+$BASICSTYLE__h1: bold 1.4em/0.95 $serif;
+$BASICSTYLE__h2: normal 1.5em/1.1 $serif;
+$BASICSTYLE__h3: bold 1.2em $serif;
+$BASICSTYLE__h4: bold 0.86em $serif;
+$BASICSTYLE__h5: bold 0.9em $serif;
+$BASICSTYLE__h6: bold 0.8em $sans-serif;
+
+$BASICSTYLE__blockquote:  0.9em $serif;
+$BASICSTYLE__p: 100 1.2em/1.3 $serif;
+$BASICSTYLE__li: $BASICSTYLE__p;
+
+$BASICSTYLE__defaulttext-color: #444;
+
+/*	Nav
+	--- */
+
+$VASSAR-NAV__item-color--current: #61243C;
+
+
+/*	Search
+	------ */
+
+$VASSAR-SEARCH__itemTitle-font: bold 1em/1.2 $serif;
+$VASSAR-SEARCH__item-font: normal 1em/1.2 $serif;
+
+/*	Footer
+	------ */
+
+$VASSAR-FOOTER__site-font: 0.9em $sans-serif;
+
+
+/*	Layout
+	------ */
+
+$figure--image-margin: 0;
+$figure--image-padding: 0;
+
+$width-standard: 32em;				/*	For a Stories-like layout where the content is in one centered
+										column, width-standard determines the max width of a 
+										standard content block. (Doesn't apply to a typical 
+										nav-content-sidebar 3col layout.) 
+									*/
+$width-wide: 38em;
+$width-xwide: 48em;
+
+$VASSAR-LISTCLEAN__item-space: 0.1em;
+
+
+/*	Breakpoints
+	----------- */
+
+$tiny: 25em; /* 400px divided by 16px */
+$small: 45em; /* 600px divided by 16px */
+$medium: 50em; /* 800px divided by 16px */
+$large: 62.5em; /* 1000px divided by 16px */
+$verylarge: 72em; /* 1000px divided by 16px */

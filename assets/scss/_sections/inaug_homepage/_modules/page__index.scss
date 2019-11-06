@@ -1,0 +1,18 @@
+.pageindex {
+    text-align: center;
+    margin: 0 0 2em 0;
+    border-bottom: 1px solid #ddd;
+    padding: 0 0 1em 0;	
+	
+	.pageindex__item {
+		display: inline;
+		
+		&:after {
+			content: "\00B7";
+			margin: 0 0.5em;
+		}
+		&:last-child:after {
+			content: none;
+		}
+	}
+}

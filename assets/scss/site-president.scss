@@ -1,0 +1,90 @@
+@import "_config";
+@import "_tools/_all";
+@import "_add-ons/_all";
+@import "_modules/_all";
+
+
+/*	PRESIDENT-SPECIFIC */
+@import "_modules-president/_all";
+@import "_sections/president_homepage/style.scss";
+@import "_sections/pres_point-of-view/_all.scss";
+@import "_sections/president_contact/style.scss";
+@import "_sections/pres_team/style.scss";
+
+@import "_frameworks/_basictools";
+// @import "~vkit";
+
+@import "_sections/news/_all.scss";
+@import "layout";
+
+@import "design";
+
+
+/*	Site-specific tweaks */
+
+.u-Masthead__siteName {
+    font-size: 1.8em;
+}
+.u-Masthead__vassar {
+	text-align: left;
+}
+.title--speaker {
+	margin-top: -0.6em;
+}
+.u-NavSite__item {
+	padding: 0.4em 0;
+}
+.u-pageInner {
+	
+	.u-NavSite,
+	.u-lHeader {
+		padding-left: 0;	
+	}
+	.u-pageTitle {
+		margin: 0 0 0.5em 0;
+	}
+	.u-lHeader {
+		float: none;
+		padding-top: 1rem;
+		margin-bottom: 1em;
+		width: 100%;
+
+		@media screen and (min-width: $small) {
+			border-bottom: 1px solid #aaa;
+		}
+	}
+	.u-lMain {
+		
+		.maintitle {
+			display: block;
+			line-height: 1;
+			font-size: 0.8em;
+		}
+	}
+}
+.u-NavSite__main .u-NavSite__level--1 > .u-NavSite__itemContainer:first-child {
+	a {
+		//.font-weight: bold;
+	    //font-size: 0.9em;
+	    //text-transform: uppercase;
+	    //letter-spacing: 0.1em;
+	    //font-family: $serif-display;
+	    
+	    svg {
+		    display: none;
+	    }
+	}
+}
+.u-lFooter {
+    padding-top: 2em;
+}
+
+
+@import "president-universal";
+
+
+
+
+
+
+

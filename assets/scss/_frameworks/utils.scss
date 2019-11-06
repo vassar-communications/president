@@ -1,0 +1,70 @@
+.centerMe {
+	margin-left: auto;
+	margin-right: auto;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.hide--visually {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+}
+.hide--completely {
+	display: none;
+}
+.margin-none {
+	margin: 0;
+}
+.padding-none {
+	padding: 0;
+}
+.no-appearance {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;	
+}
+
+
+@media screen and (min-width: $medium) {
+	.position-absolute {
+		position: absolute;
+	}
+}
+
+
+.position-absolute {
+	@media screen and (min-width: $small) {
+		position: absolute;
+	}
+	@media screen and (min-width: $medium) {
+		position: absolute;
+	}
+	@media screen and (min-width: $large) {
+		position: absolute;
+	}	
+}
+.textAlign-center {
+	text-align: center;
+}
+.width-full {
+	width: 100%;
+}
+.width-half {
+	width: 50%;
+}
+.width-quarter {
+	width: 25%;
+}
+.width-third {
+	width: 33%;
+}
+
+/*	.width-standard is for a column of regular content	*/
+.width-standard {
+	max-width: $width-standard;
+}

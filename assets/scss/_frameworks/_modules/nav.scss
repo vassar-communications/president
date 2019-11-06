@@ -1,0 +1,23 @@
+/*	Nav
+	===
+	Sets up basic styling for navigation. If not invoked
+	via config, no styling appears. No layout styling should appear here,
+	since the layout for nav would appear in the site's general layout.
+*/
+
+$BUILDKIT__nav: false !default;
+
+@if $BUILDKIT__nav == true {
+	.u-NavSite {
+		li {
+			a {
+				color: $BUILDKIT__nav_color;
+				font: $BUILDKIT__nav_font;
+				
+				&:hover, &:visited:hover {
+					color: $BUILDKIT__nav_color--hover;
+				}
+			}
+		}
+	}
+}

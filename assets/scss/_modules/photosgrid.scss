@@ -1,0 +1,13 @@
+.photosgrid {
+	display: flex;
+	flex-wrap: wrap;
+	
+	.photo__item {
+		width: 50%;
+		padding: 0 1em 1em 0;
+
+		.u-Figure {
+			margin: 0;
+		}
+	}
+}

@@ -1,0 +1,64 @@
+.hp-module.recent-messages {
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin: 2em 2em 0 2em;
+	max-width: 40em;
+    padding-bottom: 2em;
+
+	@media screen and (min-width: $medium) {
+	    margin: 3em 3em 0 3em;
+	}
+	@media screen and (min-width: $large) {
+	    margin: 4em 4em 0 4em;
+	}
+}
+
+.Media {
+	@media screen and (min-width: $small) {
+		display: flex;
+		display: -webkit-flex;
+	}
+  align-items: flex-start;
+  align-items: -webkit-flex-start;
+  margin-bottom: 1em;
+  
+  a, a:visited {
+	  background: none !important;
+	  text-shadow: none !important;
+	  text-decoration: none !important;
+  }
+}
+
+.Media-figure {
+	  margin-right: 1em;
+	  width: 100%;
+	  
+	@media screen and (min-width: $small) {
+		width: 14em;
+	}
+}
+
+.Media-body {
+  flex: 1;
+}
+.Media-body,
+.Media-body :last-child {
+  margin-bottom: 0;
+  margin-top: 1em;
+
+  	@media screen and (min-width: $small) {
+  	margin-top: 0;
+	}
+}
+
+.Media-title {
+  margin: 0 0 .5em;
+}
+
+.Media--center {
+  align-items: center;
+}
+
+.Media--reverse > .Media-figure {
+  order: 1;
+  margin: 0 0 0 1em;
+}

@@ -1,0 +1,15 @@
+.has-iframe {
+	.titleContainer,
+	.imageHeader__image--container {
+	    display: none;
+	}
+	.u-Video {
+	    margin-top: 5em;
+	}
+	&.has-iframe {
+	    background: #000;
+		margin: 0 auto;
+		text-align: center;
+		max-width: 50em;
+	}	
+}

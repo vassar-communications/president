@@ -1,0 +1,18 @@
+.Module__header {
+	margin-bottom: 0.2em;
+	font-size: 1em;
+}
+h3.Module__header {
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+	margin-top: 1em;
+	
+	&:first-child {
+		margin-top: 0;
+	}
+}
+.modulesArea li,
+.modulesArea dt,
+.modulesArea dd {
+	font-size: 1.1em;
+}

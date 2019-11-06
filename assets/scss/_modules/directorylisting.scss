@@ -1,0 +1,58 @@
+.directorylisting {
+	padding: 0;
+}
+.directorylisting__itemContainer {
+	border-bottom: 1px solid #eee;
+	overflow: hidden;
+	width: 100%;
+	list-style: none;
+    margin-bottom: 0.2em !important;
+    padding-bottom: 0.2em !important;
+	
+	.directorylisting__item {
+		line-height: 1.2;
+		margin: 0;
+		font-size: 1em;
+		font-family: $serif;
+	}
+	a {
+		border: none;
+	}
+
+	.u-BioList__name {
+	}
+	.directoryContactInfo__data {
+		font-weight: 100;
+		font-size: 0.9em;
+		text-align: right;
+	}
+	.directorylisting__item {
+		border: none;
+	}
+	.directoryContactInfo--title {
+		font-style: italic;
+	}
+	.u-BioList__name {
+	    font: inherit;
+	    font-weight: bold;
+	}
+
+	@media screen and (min-width: $medium) {
+		.directorylisting__item {
+			float: left;
+		}
+		.directoryContactInfo--person {
+			padding-right: 1em;
+			width: 30%;
+		}
+		.directoryContactInfo--title {
+			width: 40%;
+		}
+		.directoryContactInfo--numbers {
+			width: 30%;
+		}
+		.directoryContactInfo--numbers {
+			text-align: right;
+		}
+	}
+}

@@ -1,0 +1,69 @@
+.u-ExtendedFooter {
+    max-width: 45em;
+    margin: 0 auto 4em auto;
+    border-bottom: 3px double #F0EEEB;
+    padding-bottom: 4em;
+    padding-top: 2em;
+    padding-bottom: 3em;
+	text-align: center;
+    
+	@media screen and (min-width: $medium) {
+		display: flex;
+		text-align: left;
+
+		.footerExtra {
+			width: 10%;
+		}
+		.u-ExtendedFooter__listGroup {
+			display: flex;
+			width: 90%;
+		}
+		.SocialAccount__iconList {
+			margin-top: 0.3em;
+		}
+	}
+
+	.u-footMasthead {
+		display: none;
+	}
+
+	.u-ExtendedFooter__listContainer {
+		@media screen and (min-width: $medium) {
+			width: 33%;
+		}
+	}
+	.u-ExtendedFooter__listHeader {
+		border-top: 1px solid #F0EEEB;
+	    margin: 1em 0 0.3em 0;
+	    padding: 1em 0 0 0;
+    
+		@media screen and (min-width: $medium) {
+			border-top: none;
+		    margin: 0 0 1em 0;
+		    padding: 0;
+		}
+    }
+    .u-ExtendedFooter__list {
+		@include cleanlist(1px solid #fff, 0.2em);
+    }
+    a:visited {
+	    color: $BASICSTYLE__link-color;
+    }
+
+	.SocialAccount__iconContainer {
+		display: inline-block;
+		width: 2em;
+		height: 2em;
+
+		@media screen and (min-width: $medium) {
+			display: block;
+		}
+	}
+
+
+
+/*
+	.SocialAccount__iconList {
+		@include cleanlist(none, 0);
+	} */
+}

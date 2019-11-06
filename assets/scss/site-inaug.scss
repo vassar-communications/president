@@ -1,0 +1,57 @@
+@import "_config";
+@import "_frameworks/_basictools";
+
+@import "_tools/_all";
+@import "_add-ons/_all";
+@import "_modules/_all";
+@import "_modules-inaug/_all";
+@import "_sections/_all";
+
+// @import "~vkit";
+
+@import "layout";
+@import "layout-inaug";
+
+@import "design";
+
+@import "_hacks/_all";
+
+.g-.is-alert .imageHeader__image {
+    position: relative;
+}
+
+.u-pageHome .u-lMain
+{
+    padding-top: 0;
+}
+
+
+@media screen and (min-width: 37.5em)
+{
+    .PageContent
+    {
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 45em)
+{
+    html.gf-
+    {
+        padding-top: 0 !important;
+    }
+}
+
+
+@media screen and (min-width: 62.5em)
+{
+    .gf- .PageContent
+    {
+        max-width: none;
+    }
+}
+
+.icon-external path
+{
+    fill: #888;
+}

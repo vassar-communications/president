@@ -1,0 +1,121 @@
+.u-Masthead__vassar--link {
+	@media screen and (min-width: $small) {
+		font-family: $serif-display;
+		text-transform: uppercase;
+	}
+}
+
+.u-pageInner {
+	.u-lHeader {
+	    padding-bottom: 1rem;
+	    
+		@media screen and (min-width: $medium) {
+			padding-top: 2rem !important;
+			margin-bottom: 2rem !important;
+		}
+	}
+	.u-Masthead {
+		display: flex;
+		display: -ms-flexbox;
+	}
+
+/*	
+	.u-Masthead__vassar {
+		@media screen and (min-width: $small) {
+			order: 1;
+		    border-right: 1px solid #eee;
+		    margin-right: 1rem;
+		    margin-left: 0;
+
+		
+			.u-Masthead__vassar--link {
+			    font-size: 3.85rem;
+			    color: #882345;
+			    display: inline-block;
+			    line-height: 1;
+			    margin-top: -0.2rem;
+			    margin-right: 1rem;
+			}
+		}
+	}
+*/
+
+	.u-Masthead__vassar {
+		display: none;
+	}
+	
+	.u-Masthead__siteName {
+		font-size: 2em;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+//		margin-top: 3em;
+		text-align: center;
+		width: 100%;
+	
+		@media screen and (min-width: $small) {
+			order: 2;
+//			margin-top: 0;
+			text-align: left;
+			width: auto;
+		}
+		@media screen and (min-width: $medium) {
+			width: auto;
+		}		
+		.u-Masthead__siteName--link {
+			font-family: $sans-serif;
+		}
+
+		.office-name {
+			font-family: $sans-serif;
+			text-transform: uppercase;
+			font-size: 0.9rem;
+			display: block;
+			margin-bottom: 0.1em;
+			font-family: $sans-serif;
+			text-transform: uppercase;
+			letter-spacing: 0.1rem;
+			padding-right: 1em;
+			color: #ABA49A;
+		}
+		.president-name {
+			color: #882345;
+			font-family: "goudy-old-style", Georgia, Times, serif;
+		    text-transform: uppercase;
+		    letter-spacing: 0.05em;
+		}
+	}
+}
+
+/*	Internet Explorer is the absolute devil. Even when they say it's better, it's never better. */
+
+@media all and (-ms-high-contrast:none) {
+	*::-ms-backdrop, .u-Masthead, .u-Masthead__vassar, .u-Masthead__vassar--link {
+		display: block !important;
+		line-height: normal !important;
+	}
+	*::-ms-backdrop,
+	.u-Masthead__siteName,
+	.u-Masthead__vassar {
+		order: initial;
+	}
+	*::-ms-backdrop, .u-Masthead__vassar--link {
+		margin-left: 0 !important;
+	}
+	*::-ms-backdrop, .u-lHeader {
+		overflow: hidden !important;
+		clear: both !important;
+		height: 11em !important;
+	}
+	*::-ms-backdrop, body {
+		overflow: hidden !important;
+	}
+}
+
+
+
+
+
+
+
+
+

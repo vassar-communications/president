@@ -1,0 +1,59 @@
+/* jeff */
+
+.g-Search__submit svg {
+    width: 50% !important;
+}
+.u-pageHome.g- .u-Masthead__vassar {
+    border-bottom: none !important;
+    margin-bottom: .6em !important;
+}
+.u-pageHome.g- .u-Masthead__siteName {
+    padding-top: 1em !important;
+}
+.u-pageInner.g- .u-Masthead__vassar {
+    border-right: none !important;
+    margin-right: 0 !important;
+}
+
+.gf- .PageContent
+{
+    max-width: none;
+    padding-top: 1.25em;
+}
+
+@media screen and (min-width: 45em) {
+html.u-pageHome.g- {
+    padding-top: 6em !important;
+}
+
+.gf- .PageContent
+{
+    padding-top: 0;
+}
+
+.u-pageHome.gf- .u-Masthead__siteName
+{
+    padding-top: 0 !important;
+}
+
+html.u-pageHome.gf-
+{
+    padding-top: 0 !important;
+}
+.g-Search__submit svg {
+    width: 50% !important;
+}
+.g-Masthead__vassar--link b svg {
+    left: .5em !important;
+}
+.u-pageHome.g- .u-Masthead__vassar {
+    padding: 0 !important;
+}
+}
+@media screen
+{
+	html.g-.is-alert
+	{
+		padding-top:0 !important;
+	}
+}

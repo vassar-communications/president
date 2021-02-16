@@ -86,5 +86,11 @@
 .u-pageHome .u-NavSite__level--2 {display:none;}
 
 
+//	Chris S, Feb 15 2021
+//	bold text wasn't showing up
+.u-lContent strong,
+.u-lContent b {
+    font-variation-settings: "wght" 660;
+}
 
 
